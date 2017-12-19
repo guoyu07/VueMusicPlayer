@@ -2,17 +2,15 @@
 <template>
   <div id="app">
     <Mheader></Mheader>
-    <router-view></router-view>
+    <keep-alive><router-view></router-view></keep-alive>
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 import Mheader from '@/components/my-header'
-import Mfooter from '@/components/my-footer'
 export default {
   components: {
       Mheader,
-      Mfooter
     }
 }
 </script>

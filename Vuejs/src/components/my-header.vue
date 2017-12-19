@@ -6,22 +6,23 @@
     <router-link :to="{path:'/download',}" class="downloadApp">下载APP</router-link>
  </div>
  <div class="tabMenu">
-      <router-link class="menu" :to="{path:'/recomment'}">推荐</router-link>
+      <router-link class="menu router-link-exact-active router-link-active" :to="{path:'/recomment'}">推荐</router-link>
       <router-link class="menu " :to="{path:'/list'}">排行榜</router-link>
       <router-link class="menu " :to="{path:'/search'}">搜索</router-link>
+
   </div>
  </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 export default {
   data:function(){
     return {
-     
+
     }
   },
   methods:{
-    addActive:function(){    
+    addActive:function(){
     }
   }
 
